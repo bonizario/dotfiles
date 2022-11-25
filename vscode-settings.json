@@ -1,0 +1,101 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "editor.fontSize": 16,
+  "editor.lineHeight": 26,
+  "editor.fontLigatures": true,
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.guides.bracketPairs": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.renderLineHighlight": "gutter",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Dracula Pro",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.visible": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#ffff80",
+    "editorBracketHighlight.foreground2": "#ff80bf",
+    "editorBracketHighlight.foreground3": "#80ffea",
+    "editorBracketHighlight.foreground4": "#ffff80",
+    "editorBracketHighlight.foreground5": "#ff80bf",
+    "editorBracketHighlight.foreground6": "#80ffea",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "html-eex": "html",
+    "postcss": "css"
+  },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/*.ini": true,
+    "**/.elixir_ls": true,
+    "**/.DS_Store": true
+  },
+  "files.associations": {
+    "*.eex": "html-eex",
+    "*.leex": "html-eex",
+    "*.css": "tailwindcss"
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "**/.git/**": true,
+    "**/tmp/**": true,
+    "**/.DS_Store": true
+  },
+  "search.exclude": {
+    "**/node_modules/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "**/.git/**": true,
+    "**/tmp/**": true,
+    "**/.DS_Store": true
+  },
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "[elixir]": {
+    "editor.formatOnSave": true
+  },
+  "[cpp]": {
+    "editor.formatOnSave": true
+  },
+  "[prisma]": {
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+      "strings": "on"
+    }
+  },
+  "elixirLS.suggestSpecs": false,
+  "elixirLS.dialyzerEnabled": false,
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+  "code-runner.runInTerminal": true,
+  "code-runner.customCommand": "cd $dir && g++ -std=c++17 -Wshadow -Wall -o $fileNameWithoutExt $fileName -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG",
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++17 -Wshadow -Wall -o $fileNameWithoutExt $fileName -O2 -Wno-unused-result",
+    "c": "cd $dir && gcc -std=c99 -Wshadow -Wall -o $fileNameWithoutExt $fileName -O2 -Wno-unused-result"
+  }
+}

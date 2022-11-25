@@ -1,0 +1,19 @@
+[
+  "bradlc.vscode-tailwindcss",
+  "csstools.postcss",
+  "DaltonMenezes.aura-theme",
+  "dbaeumer.vscode-eslint",
+  "dracula-theme-pro.theme-dracula-pro",
+  "EditorConfig.EditorConfig",
+  "equinusocio.vsc-material-theme-icons",
+  "formulahendry.auto-rename-tag",
+  "formulahendry.code-runner",
+  "JakeBecker.elixir-ls",
+  "mikestead.dotenv",
+  "ms-vscode.cpptools",
+  "naumovs.color-highlight",
+  "PKief.material-product-icons",
+  "Prisma.prisma",
+  "styled-components.vscode-styled-components",
+  "waderyan.gitblame"
+]
