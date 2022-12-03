@@ -13,7 +13,7 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME=spaceship
 
 # ZSH Plugins
-plugins=(asdf git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(asdf git zsh-autosuggestions zsh-completions F-Sy-H)
 autoload -U compinit && compinit
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
