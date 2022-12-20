@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     updateChannel: 'stable',
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: '"JetBrains Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     fontWeight: 'normal',
     fontWeightBold: 'bold',
@@ -24,6 +24,5 @@ module.exports = {
   localPlugins: [
     "dracula-pro"
   ],
-
   keymaps: {},
 };
