@@ -1,8 +1,8 @@
 {
   "editor.tabSize": 2,
-  "editor.rulers": [80],
-  "editor.fontSize": 16,
-  "editor.lineHeight": 26,
+  "editor.fontSize": 14,
+  "editor.rulers": [100],
+  "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   "editor.linkedEditing": true,
   "editor.matchBrackets": "never",
@@ -12,13 +12,14 @@
   "editor.renderLineHighlight": "gutter",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
   },
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "workbench.startupEditor": "none",
@@ -26,8 +27,8 @@
   "workbench.sideBar.location": "right",
   "workbench.activityBar.visible": true,
   "workbench.editor.labelFormat": "short",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
-  "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#ffff80",
     "editorBracketHighlight.foreground2": "#ff80bf",
@@ -60,7 +61,6 @@
     "**/node_modules/**": true,
     "**/build/**": true,
     "**/dist/**": true,
-    "**/.git/**": true,
     "**/tmp/**": true,
     "**/.DS_Store": true
   },
@@ -76,10 +76,10 @@
   "typescript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "[elixir]": {
+  "[cpp]": {
     "editor.formatOnSave": true
   },
-  "[cpp]": {
+  "[elixir]": {
     "editor.formatOnSave": true
   },
   "[prisma]": {
@@ -88,8 +88,6 @@
       "strings": "on"
     }
   },
-  "elixirLS.suggestSpecs": false,
-  "elixirLS.dialyzerEnabled": false,
   "C_Cpp.default.cppStandard": "c++17",
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
   "code-runner.runInTerminal": true,
@@ -97,5 +95,32 @@
   "code-runner.executorMap": {
     "cpp": "cd $dir && g++ -std=c++17 -Wshadow -Wall -o $fileNameWithoutExt $fileName -O2 -Wno-unused-result",
     "c": "cd $dir && gcc -std=c99 -Wshadow -Wall -o $fileNameWithoutExt $fileName -O2 -Wno-unused-result"
+  },
+  "elixirLS.suggestSpecs": false,
+  "elixirLS.dialyzerEnabled": false,
+  "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.folders.associations": {
+    "application": "app",
+    "domain": "class",
+    "dtos": "typescript",
+    "entities": "class",
+    "factories": "class",
+    "fakes": "mock",
+    "http": "container",
+    "implementations": "core",
+    "infra": "other",
+    "mappers": "meta",
+    "migrations": "tools",
+    "modules": "components",
+    "presentation": "template",
+    "protocols": "contract",
+    "protos": "pipe",
+    "providers": "include",
+    "repositories": "mappings",
+    "schemas": "class",
+    "subscribers": "messages",
+    "use-cases": "functions",
+    "view-models": "views",
+    "websockets": "pipe"
   }
 }
