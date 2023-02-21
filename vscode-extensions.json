@@ -3,7 +3,7 @@
   "csstools.postcss",
   "DaltonMenezes.aura-theme",
   "dbaeumer.vscode-eslint",
-  "dracula-theme-pro.theme-dracula-pro",
+  "eamodio.gitlens",
   "EditorConfig.EditorConfig",
   "equinusocio.vsc-material-theme-icons",
   "formulahendry.auto-rename-tag",
@@ -12,8 +12,10 @@
   "mikestead.dotenv",
   "ms-vscode.cpptools",
   "naumovs.color-highlight",
+  "PKief.material-icon-theme",
   "PKief.material-product-icons",
   "Prisma.prisma",
+  "ritwickdey.LiveServer",
   "styled-components.vscode-styled-components",
   "waderyan.gitblame"
 ]
