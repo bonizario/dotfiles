@@ -26,6 +26,18 @@ git config --global commit.gpgsign true
 git config --global gpg.program gpg
 ```
 
+Keep GPG credentials cached
+
+```bash
+sudo nano ~/.gnupg/gpg-agent.conf
+
+cat ~/.gnupg/gpg-agent.conf
+# default-cache-ttl 31536000
+# max-cache-ttl 31536000
+
+gpg-connect-agent reloadagent /bye
+```
+
 <br />
 
 # 🚀 Performance
