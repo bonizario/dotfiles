@@ -1,6 +1,6 @@
 {
   "editor.tabSize": 2,
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.rulers": [100],
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
@@ -23,12 +23,12 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Dracula Pro",
+  "workbench.colorTheme": "Aura Dark",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.visible": true,
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "material-product-icons",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#ffff80",
     "editorBracketHighlight.foreground2": "#ff80bf",
@@ -98,29 +98,13 @@
   },
   "elixirLS.suggestSpecs": false,
   "elixirLS.dialyzerEnabled": false,
-  "material-icon-theme.activeIconPack": "nest",
-  "material-icon-theme.folders.associations": {
-    "application": "app",
-    "domain": "class",
-    "dtos": "typescript",
-    "entities": "class",
-    "factories": "class",
-    "fakes": "mock",
-    "http": "container",
-    "implementations": "core",
-    "infra": "other",
-    "mappers": "meta",
-    "migrations": "tools",
-    "modules": "components",
-    "presentation": "template",
-    "protocols": "contract",
-    "protos": "pipe",
-    "providers": "include",
-    "repositories": "mappings",
-    "schemas": "class",
-    "subscribers": "messages",
-    "use-cases": "functions",
-    "view-models": "views",
-    "websockets": "pipe"
+  "settingsSync.ignoredExtensions": [
+    "ms-vscode.cpptools",
+    "formulahendry.code-runner"
+  ],
+  "symbols.hidesExplorerArrows": true,
+  "symbols.files.associations": {
+    ".tool-versions": "gear",
+    "*.config": "gear"
   }
 }
