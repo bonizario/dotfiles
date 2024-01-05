@@ -1,81 +1,88 @@
 {
-  "editor.tabSize": 2,
-  "editor.fontSize": 16,
-  "editor.rulers": [100],
-  "editor.lineHeight": 24,
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.fixAll.eslint"
+  ],
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.guides.bracketPairs": true,
+  "editor.lightbulb.enabled": false,
+  "editor.lineHeight": 1.5,
   "editor.linkedEditing": true,
   "editor.matchBrackets": "never",
   "editor.minimap.enabled": false,
-  "editor.guides.bracketPairs": true,
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.padding.top": 8,
+  "editor.parameterHints.enabled": false,
   "editor.renderLineHighlight": "gutter",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
-  },
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-  "explorer.confirmDragAndDrop": false,
-  "extensions.ignoreRecommendations": true,
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Aura Dark",
-  "workbench.sideBar.location": "right",
-  "workbench.activityBar.visible": true,
-  "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "symbols",
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorCustomizations": {
-    "editorBracketHighlight.foreground1": "#ffff80",
-    "editorBracketHighlight.foreground2": "#ff80bf",
-    "editorBracketHighlight.foreground3": "#80ffea",
-    "editorBracketHighlight.foreground4": "#ffff80",
-    "editorBracketHighlight.foreground5": "#ff80bf",
-    "editorBracketHighlight.foreground6": "#80ffea",
-    "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
-  },
+  "editor.rulers": [80, 120],
+  "editor.semanticHighlighting.enabled": true,
+  "editor.snippetSuggestions": "none",
+  "editor.tabSize": 2,
+
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
     "html-eex": "html",
-    "postcss": "css"
+    "javascript": "javascriptreact",
+    "postcss": "css",
+    "typescript": "typescriptreact"
+  },
+
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "extensions.ignoreRecommendations": true,
+
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.eex": "html-eex",
+    "*.env*": "dotenv"
   },
   "files.eol": "\n",
   "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "files.exclude": {
-    "**/*.ini": true,
-    "**/.elixir_ls": true,
-    "**/.DS_Store": true
-  },
-  "files.associations": {
-    "*.eex": "html-eex",
-    "*.leex": "html-eex",
-    "*.css": "tailwindcss"
-  },
   "files.watcherExclude": {
-    "**/node_modules/**": true,
     "**/build/**": true,
     "**/dist/**": true,
-    "**/tmp/**": true,
-    "**/.DS_Store": true
+    "**/tmp/**": true
   },
+
   "search.exclude": {
-    "**/node_modules/**": true,
     "**/build/**": true,
     "**/dist/**": true,
-    "**/.git/**": true,
-    "**/tmp/**": true,
-    "**/.DS_Store": true
+    "**/tmp/**": true
   },
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
+
+  "security.workspace.trust.untrustedFiles": "newWindow",
+
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.scrollback": 10000,
+
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.openSideBySideDirection": "right",
+  "workbench.editor.untitled.labelFormat": "name",
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "javascript.preferences.quoteStyle": "single",
   "javascript.updateImportsOnFileMove.enabled": "never",
+
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "never",
+
   "[cpp]": {
     "editor.formatOnSave": true
   },
@@ -88,23 +95,29 @@
       "strings": "on"
     }
   },
-  "C_Cpp.default.cppStandard": "c++17",
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
-  "code-runner.runInTerminal": true,
-  "code-runner.customCommand": "cd $dir && g++ -std=c++17 -Wshadow -Wall -o $fileNameWithoutExt $fileName -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG",
-  "code-runner.executorMap": {
-    "cpp": "cd $dir && g++ -std=c++17 -Wshadow -Wall -o $fileNameWithoutExt $fileName -O2 -Wno-unused-result",
-    "c": "cd $dir && gcc -std=c99 -Wshadow -Wall -o $fileNameWithoutExt $fileName -O2 -Wno-unused-result"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "elixirLS.suggestSpecs": false,
-  "elixirLS.dialyzerEnabled": false,
-  "settingsSync.ignoredExtensions": [
-    "ms-vscode.cpptools",
-    "formulahendry.code-runner"
-  ],
-  "symbols.hidesExplorerArrows": true,
-  "symbols.files.associations": {
-    ".tool-versions": "gear",
-    "*.config": "gear"
-  }
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "catppuccin.accentColor": "lavender",
+
+  "git.openRepositoryInParentFolders": "never",
+
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  "redhat.telemetry.enabled": false
 }

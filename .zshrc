@@ -7,7 +7,6 @@ alias zs="source ~/.zshrc"
 alias c="code ~/projects/cp && exit"
 alias f="cd ~/projects/cp && source utils/cleanup.sh && find problems -type f | wc -l"
 alias showip="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
-alias fin="cd ~/projects/jstack/fincheck/api && docker start pg && npm run start:dev"
 
 # Environment Variables
 export NODE_ENV=development
@@ -22,6 +21,9 @@ export PATH=${ANDROID_HOME}/platform-tools:${PATH}
 plugins=(asdf git zsh-autosuggestions zsh-completions F-Sy-H)
 autoload -U compinit && compinit
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+setopt PROMPT_CR
+setopt PROMPT_SP
+export PROMPT_EOL_MARK=""
 
 # Spaceship Theme Configuration
 SPACESHIP_PROMPT_ORDER=(
@@ -49,3 +51,11 @@ SPACESHIP_BATTERY_SYMBOL_FULL=''
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 
 source $ZSH/oh-my-zsh.sh
+
+# pnpm
+export PNPM_HOME="/home/bonizario/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
