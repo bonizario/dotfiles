@@ -70,7 +70,7 @@
   "workbench.editor.labelFormat": "short",
   "workbench.editor.openSideBySideDirection": "right",
   "workbench.editor.untitled.labelFormat": "name",
-  "workbench.iconTheme": "bearded-icons",
+  "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
